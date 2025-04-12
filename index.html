@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="calculator-container">
+        <div class="calculator-display" id="display"></div>
+        <div class="calculator-btn-container">
+            <div class="calculator-btn btn1" onclick="clean()">AC</div>
+            <div class="calculator-btn btn2" onclick= "insert('(')">(</div>
+            <div class="calculator-btn btn3" onclick= "insert(')')">)</div>
+            <div class="calculator-btn btn4" onclick="insert('/')">&divide;</div>
+            <div class="calculator-btn btn5" onclick="insert('7')">7</div>
+            <div class="calculator-btn btn6" onclick="insert('8')">8</div>
+            <div class="calculator-btn btn7" onclick="insert('9')">9</div>
+            <div class="calculator-btn btn8" onclick="insert('*')">&times;</div>
+            <div class="calculator-btn btn9" onclick="insert('4')">4</div>
+            <div class="calculator-btn btn10" onclick="insert('5')">5</div>
+            <div class="calculator-btn btn11" onclick="insert('6')">6</div>
+            <div class="calculator-btn btn12" onclick="insert('-')">-</div>
+            <div class="calculator-btn btn13" onclick="insert('1')">1</div>
+            <div class="calculator-btn btn14" onclick="insert('2')">2</div>
+            <div class="calculator-btn btn15" onclick="insert('3')">3</div>
+            <div class="calculator-btn btn16" onclick="insert('+')">+</div>
+            <div class="calculator-btn btn17" onclick="insert('0')">0</div>
+            <div class="calculator-btn btn18" onclick="insert('.')">.</div>
+            <div class="calculator-btn btn19" onclick="equal()">=</div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

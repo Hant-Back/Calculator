@@ -16,10 +16,18 @@ function equal() {
                 throw new Error("You cannot divide by 0"); // генеруємо помилку
             }
             let result = eval(exp);
+            let hint1 = "卐"
+            let hint2 = "ꑭ Азов"
             if (result % 1 === 0) {
                 display.innerHTML = result.toFixed(0); // якщо немає залишку
             } else {
                 display.innerHTML = result.toFixed(2); // якщо є залишок
+            }
+            if (result === 1488) {
+                display.innerHTML = hint1;
+            }
+            if (result === 4308) {
+                display.innerHTML = hint2;
             }
         } catch (error) {
             display.innerHTML = error.message; // виведення повідомлення про помилку

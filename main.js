@@ -18,10 +18,11 @@ function equal() {
             if (/[\+\-\*\/]{2,}/.test(exp)) { // перевірка на недопустимі комбінації операторів
                 throw new Error("Недопустима комбінація операторів"); // генеруємо помилку
             }
-            if (result === 1488) {
-                display.innerHTML = "卐";
-            }
+            let hint1  = "卐";
             let result = eval(exp);
+            if (result === 1488) {
+                display.innerHTML = hint1;
+            }
             if (result % 1 === 0) {
                 display.innerHTML = result.toFixed(0); // якщо немає залишку
             } else {
